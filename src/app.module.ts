@@ -15,6 +15,7 @@ import { MailerModule } from './_mailer/mailer.module';
 import { TasksModule } from './_tasks/_tasks.module';
 import { AbilityModule } from './ability/ability.module';
 import { HelperModule } from './_utils/helper/helper.module';
+import { KassaModule } from './_kassa/kassa.module';
 
 @Module({
   imports: [
@@ -46,6 +47,7 @@ import { HelperModule } from './_utils/helper/helper.module';
     TasksModule,
     AbilityModule,
     HelperModule,
+    KassaModule,
   ],
   controllers: [AppController],
   providers: [AppService],
