@@ -12,4 +12,8 @@ export class CreateKassaDto {
   @IsString()
   @MinLength(1)
   price: string;
+
+  @IsString()
+  @MinLength(1)
+  title: string;
 }

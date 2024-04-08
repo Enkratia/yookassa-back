@@ -19,8 +19,20 @@ export class Kassa {
   @Column()
   price: string;
 
+  @Column()
+  title: string;
+
+  @Column({ default: 'pending' })
+  status: string;
+
   @CreateDateColumn()
   createdAt: Date;
 
-  // **
+  // ...
+
+  constructor(status?: string) {
+    if (status) {
+      this.status = status;
+    }
+  }
 }
